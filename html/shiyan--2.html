@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-cn">
+<style type="text/css">
+    ul{
+			list-style-type: none; 
+			width: auto;
+			height: 50px;
+			background: #777779;
+			margin: 0px;
+			padding-left: 20%;
+			text-align: center;
+		}
+	li{
+			float: left;
+			width: 130px;
+			height: 100%;
+			padding: 0px;
+			margin-right: 1%;  
+		}
+	a:link,a:visited{ 
+			display: block;
+			color: #FFFFFF;
+			background-color: rgb(132, 132, 134);
+			text-align: center;
+			line-height: 30px; 
+			padding: 10px;
+			text-decoration: none; 
+		}
+	a:hover{ 
+			background-color: #5f5d5d;
+		}
+    textarea{
+width:200px
+height:120px
+    }
+</style>
+<head>
+
+<meta http-equiv="Content-type" content="text/html; 
+charset=utf-8">
+<title>教师注册系统</title>
+</head>
+<body style="background-color:rgb(199, 196, 199);">
+    <div class="box">
+        <div class="nav1">
+            <ul>
+                <li><a href="https://www.csu.edu.cn/"> 中南大学</a></li>
+            </ul>
+        </div>
+    <div>
+<form action="index.php" method="post;">
+<div>
+<span>姓名</span>
+<label>
+<input type="text" name="name"/>    
+</label>
+</div>
+
+<br>
+<div>
+<span>年龄</span>
+<label for="age"></label>
+<input type="text"  id="age" name="age"/>
+</div>
+
+<div>
+<span>性别</span>
+<label>
+<input type="radio" name="sex" value="sex"/>男
+<input type="radio" name="sex" value="sex"/>女
+</label>
+</div>
+
+<div>
+<span>所在院系</span>
+<label for="apartment"></label>
+<select name="apartment" id="apartment" value="apartment">
+<option>计算机学院</option>
+<option>自动化学院</option>
+<option>地信院</option>
+<option>文学院</option>
+<option>商学院</option>
+<option>外国语学院</option>
+<option>湘雅医学院</option>
+<option>其他</option>
+</select>
+</div>
+
+<div>
+<span>政治面貌</span>
+<label>
+<input type="radio" name="identity" value="identity" checked="checked"/>党员
+<input type="radio" name="identity" value="identity"/>群众
+</label>
+</div>
+
+<div>
+<span>所授课程</span>
+<label for="course"></label>
+<input type="checkbox" name="course" id="course" value="course"/>高等数学<br>
+<input type="checkbox" name="course" id="course" value="course"/>大学英语<br>
+<input type="checkbox" name="course" id="course" value="course"/>计算机程序设计基础<br>
+<input type="checkbox" name="course" id="course" value="course"/>软件开发技术基础<br>
+<input type="checkbox" name="course" id="course" value="course"/>思想道德与法治<br>
+<input type="checkbox" name="course" id="course" value="course"/>体育<br>
+<input type="checkbox" name="course" id="course" value="course"/>军事理论<br>
+<input type="checkbox" name="course" id="course" value="course"/>新生课<br>
+</div>
+
+<div>
+<span>职称与经历:<textarea maxlength="15"></textarea></span>
+</div>
+
+<br>
+<div>
+<input type="submit" value="提交">
+</div>
+
+</form>
+  </body>
+    </html>
